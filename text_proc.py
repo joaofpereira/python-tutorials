@@ -18,7 +18,6 @@ def plural(word):
     else:
         return word + 's'
 
-import nltk
 def unusual_words(text):
     text_vocab = set(w.lower() for w in text if w.isalpha())
     english_vocab = set(w.lower() for w in nltk.corpus.words.words())
